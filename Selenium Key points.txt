@@ -1,0 +1,30 @@
+commands
+	quit
+	back
+	forward
+	thread.sleep
+	navigate
+	findelement
+	sendkeys
+	click
+
+input field commands
+	getattribute
+	isenabled
+	read only
+	
+Locators
+	Xpath-Attribute,collection,condition,Text
+		last,position,normalise,starts-with
+	linked text
+	id
+	name
+	class
+	partial link text
+
+Element 
+	Location
+	color
+
+Screenshot
+

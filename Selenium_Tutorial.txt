@@ -1,0 +1,25 @@
+Selenium
+1.Tool to automate the browser
+2.Selenium name came by (killing out mercury industry)
+
+Locators
+1.Locator types: id, name, className, tagName, css, xPath, linkText, PartialLinkText
+Xpath
+1.Types: (i)Absolute-Need to traverse from the root for eg,html/body/tag
+	 (ii)Relative- can traverse the path directly for eg,//tag
+2.while finding elements: dont use duplicate & dynamic values
+
+Alert 
+1.couldnt do any actions if alert pops up and right click is also not possible.
+2.Types: Simple Alert, Confirm Alert, Prompt Alert.
+3.Simple Alert - Ok button only
+	Confirm Alert - Ok, Cancel button
+	Prompt Alert - Ok, Cancel Button with, Can send data with it.
+4.Methods in alert : accept,dismiss,getText,sendkeys
+5.without handling alert next step is not possible
+6.if alert present and not handled = unhandled exception
+	if alert is not available = noAlertPresent Exception
+
+Methods
+getTittle()
+getText()

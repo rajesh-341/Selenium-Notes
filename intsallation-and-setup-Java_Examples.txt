@@ -1,0 +1,35 @@
+1.install java 1.8 kit
+2.install eclipse 2019 version
+3.create maven project in eclipse
+4.package name should start with small case
+5.class name should start with upper case
+
+
+
+Constructor:
+1.it doesnt need return type
+2.it is method where we initialise the object
+3.Modifier types: Public, Private, Default
+4.Constructor types: Default, parameterised constructor
+5.To change the value of instance variable
+
+Static variable
+1.It belongs to class
+2.While calling it, the starts from the last assigned value to the variable
+(vs)
+Instance Variable
+1.It belongs to object
+2.While calling it, the value starts from default value variable
+
+Static Method
+1.Only static variable can be used in static method
+2.this keyword doesnt work because it refers only class
+3.static method doesnt need object
+4.it can call with syntax (className.MethodName)
+
+Array
+1.Array variable can print using Arrays.toString()
+2.can declare array variable in two ways((1.int[] a = new int[3] && 2.int a =[2,3,4,6]))
+3.Declared array memory cannot be changed
+4.Throughs exception if we try to call a[-1]
+

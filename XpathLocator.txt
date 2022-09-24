@@ -1,0 +1,53 @@
+					Xpath
+
+Types:
+	1.Absolute Xpath - It needs to traverse from the root
+				eg:html/body/tag
+	2.Relative Xpath- The path can be traversed directly
+				eg://tag
+				Syntax: //tagName[@AttributeName='AttributeValue']
+
+[last value
+	syntax: (//input)[last()]
+	syntax: (//input)[last()-1]=> slicing i.e(taking last before value)
+
+position value
+	syntax: (//input)[position()=1(@Name='password')]=> based on position number
+
+starts-with
+	syntax: (//input)[starts-with(@Name='')]
+
+normalize-space
+	1.works without spaces at two ends
+	syntax: (//input)[normalize-space(@name='Enter your name')]
+
+]
+Attribute Xpath
+	1.When not to Use:For the attribute value changes i.e STATIC DATA may be based on (condition)
+	
+	2.Syntax: //tagName[@AttributeName='AttributeValue']
+	
+	3.Can stop searching for Xpath after getting (1 of 1)
+
+Conditional Xpath
+	1.And Condition Syntax: //tagName[@Attribute1='AttributeValue' and @Attribute2='AttributeValue'],
+	can use And like this also: //tagName[@Attribute1='AttributeValue'][Attribute2='AttributeValue'] 
+	2.OR Condition Syntax: //tagName[@Attribute1='AttributeValue' or @Attribute2='AttributeValue']
+
+Collection Xpath
+	1.It is not recommended most times
+	2.Syntax: (//tagName[@AttributeName='AttributeValue'])[1]=>Array Value
+	3.It is based on the index value
+
+Contains Xpath
+	1.It is to check the Attribute value partially
+		eg: placeholder='first & last'
+		syntax: //input[contains(@placeholder,'first')]
+
+Text Xpath
+	1.Syntax: //tagName[text()='Enter Your name']
+	2.//tagName[contains(text(),'Enter your')]=> contains works
+	3.//tagName[.='Enter Your name']=> cab also use for text
+	4.Text value should be follow with spaces
+
+

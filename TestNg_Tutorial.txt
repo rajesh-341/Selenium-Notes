@@ -1,0 +1,57 @@
+		Test Next Generation
+
+Dependency - Library or Jar file(which contains prebuilt functions)
+vs
+Plugin - Is a software or tool i.e is used to run the code in our required environmentS
+
+
+1.Test Ng return type is always void
+2.TestNg is used to run multiple at the same time
+3.Test Ng Types : Sequential, Parallel Execution
+4.Thread Count: Can specify how many threads should work at same time
+	for eg: we have (i) Test case = 2 & Threads = 2 => Run both case at same time
+				(ii)Test Case = 1 & Threads =1 => Two cases run one by one
+
+5.Test annotation according to the ascii value Order
+	for eg: Apple run first & apple run second
+	syntax: @Test
+			public void methodName(){}
+
+6.Priority Attribute
+	it tells which function to be executed first according to the interger value given to priority
+	syntax: @Test(priority = 1)
+
+7.DependsOnMethods Attribute
+	(i)It works according to the successfull execution of method given in dependsOnMethod
+	syntax: @Test("MethodName");=> for same class
+	syntax: @Test("PackageName.ClassName.MethodName");=> for from other package 
+	(ii)DependsOnMethod has more priority than priority Attribute.
+
+8.Invoication Count Attribute
+	(i)it specifies no of time the test run to iterate
+Invocation Timeout Attribute
+	(i)it tells how much time the total iteration should take 
+	(ii)if the test couldnt run in specified milliSecond then failure could occur
+	(iii)Timout doesnt work without count.
+
+9.Exceptions in selenium
+	(i)
+
+10.Methods in testRun:
+	Description Attribute- Text to be displayed at test case result
+	always run Attribute- it make the function run even it the dependsonMethod fails
+	enabled Attribute`- enable false make the method invisible from the test run
+
+11.ThreadPoolSize Attribute - it is same as thread cout i.e how many threads to use at same time
+	Timeout Attribute - how much time to take for in a single run test case
+					it runs without invoication count
+	ExpectedException Attribute - We can give our needed exception even we are facing any other problem in the function
+
+12.Parameter Annotiation
+	(i)it is used to pass value from xml file to the required package/class
+	(ii)it should run using test suite
+	(iii)Cross browser test using two browser
+13.data provider
+	(i)Can send dyanamic array values by passing the dataprovider name to other function
+	(ii)can pass data from other class by inheriting the class.
+	(iii)Inherit data from other class using extends (or) by using dataProviderClass
